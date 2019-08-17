@@ -44,3 +44,7 @@ GoodClock Android library has parameters which may work for most of the user nee
 
 ## 1.3 Accuracy of Android implementation
 The Android implementation which calculates the offset using NTP server was tested across a set of Android Smartphones using the UCLA Campus Wifi Network. The variability of offset calculations was within 1 millisecond for 95% of the cases. More details are available in the [paper and the offset variability testing repository](https://github.com/nesl/Time-Sync-Across-Smartphones).
+
+
+# 2. iOS Implementation
+The iOS implementation is also available for the library in the [file.](https://github.com/nesl/GoodClock/blob/master/GoodClock.swift)
