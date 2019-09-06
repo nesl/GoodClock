@@ -47,4 +47,7 @@ The Android implementation which calculates the offset using NTP server was test
 
 
 # 2. iOS Implementation
-The iOS implementation is also available for the library in the [file.](https://github.com/nesl/GoodClock/blob/master/GoodClock.swift)
+The iOS implementation is also available in [GoodClock.swift](https://github.com/nesl/GoodClock/blob/master/GoodClock.swift)
+
+# 3. Python Implementation
+A Python implementation is available in [GoodClock.py](https://github.com/nesl/GoodClock/blob/master/GoodClock.py)
