@@ -1,7 +1,7 @@
 # GoodClock: Providing Shared Notion of Time across Smartphones
 
-An application-level library based on the NTP with the goal to provide the shared notion of time across smartphones. GoodClock allows drift correction in cases where the NTP updates are not available frequently. 
-
+An application-level library based on the NTP with the goal to provide the shared notion of time across smartphones. GoodClock allows drift correction in cases where the NTP updates are not available frequently.  The figure below shows the GoodClock library results using UCLA campus Wi-Fi on Android devices.
+![GoodClock Library Results on UCLA Wi-Fi](https://github.com/nesl/GoodClock/blob/master/Android_Library/GoodClock_Android_Wifi.png)
 
 # 1. Android implementation
 - GoodClock library implementation for android is provided in the repo folder *Android_Library*.
