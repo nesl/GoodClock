@@ -6,7 +6,6 @@ An application-level library based on the NTP with the goal to provide the share
 # 1. Android implementation
 - GoodClock library implementation for android is provided in the repo folder *Android_Library*.
 - A sample Android application is included in the repo folder *Android_Example*.
-- GoodClock Android library and the sample Android application are authored by [Sandeep Singh Sandha](https://sites.google.com/view/sandeep-/home). For any questions/clarifications feel free to drop an email.
 - The Android implementation can be used to timestamp the sensor data, generate or listen to common events across Smartphones.
 
 
