@@ -42,7 +42,7 @@ GoodClock Android library has parameters which may work for most of the user nee
 - period: NTP offset calculations are done in the background periodically every 15 minutes. This can be changed to more frequent updates based on application constraints.
 
 ## 1.3 Accuracy of Android implementation
-The Android implementation which calculates the offset using NTP server was tested across a set of Android Smartphones using the UCLA Campus Wifi Network. The variability of offset calculations was within 1 millisecond for 95% of the cases. More details are available in the [paper and the offset variability testing repository](https://github.com/nesl/Time-Sync-Across-Smartphones).
+The Android implementation which calculates the offset using NTP server was tested across a set of Android Smartphones using the UCLA Campus Wifi Network. The variability of offset calculations was within 1 millisecond for 95% of the cases.
 
 
 # 2. iOS Implementation
