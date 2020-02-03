@@ -1,17 +1,17 @@
 # GoodClock: Providing Shared Notion of Time across Smartphones
 
-An application-level library based on the NTP with the goal to provide the shared notion of time across smartphones. GoodClock allows drift correction in cases where the NTP updates are not available frequently.  The figure below shows the GoodClock library results using UCLA campus Wi-Fi on Android devices.
+An application-level library based on the NTP to provide the shared notion of time across smartphones. GoodClock allows drift correction in cases where the NTP updates are not available frequently.  The figure below shows the GoodClock library results using UCLA campus Wi-Fi on Android devices.
 ![GoodClock Library Results on UCLA Wi-Fi](https://github.com/nesl/GoodClock/blob/master/Android_Library/GoodClock_Android_Wifi.png)
 
-# 1. Android implementation
-- GoodClock library implementation for android is provided in the repo folder *Android_Library*.
+# 1. Android Implementation
+- GoodClock library implementation for Android is provided in the repo folder *Android_Library*.
 - A sample Android application is included in the repo folder *Android_Example*.
 - The Android implementation can be used to timestamp the sensor data, generate or listen to common events across Smartphones.
 
 
-## 1.1 Android usage
-The classes *SntpDsense* and *GoodClock* can be included in any application written for Android and their respective functions can be used as follows in three simple steps:
-1. Create GoodClock object.
+## 1.1 Android Usage
+The classes *SntpDsense* and *GoodClock* can be included in any application written for Android, and their respective functions can be used as follows in three simple steps:
+1. Create a GoodClock object.
 2. Start the background thread to update the GoodClock time using NTP.
 3. Use the GoodClock functions to get time errors, accurate system time.
 
@@ -31,18 +31,18 @@ long curr_time = goodClock.Now(); //correct system time shared across Smartphone
 goodClock.Now() is equivalent to the System.currentTimeMillis(). 
 But includes the time error correction (NTP error and drift).
 
-goodClock.Now() can be used to timestamp the sensor data, network events and other actions.
+goodClock.Now() can be used to timestamp the sensor data, network events, and other actions.
 ```
 
-## 1.2 Changing default parameters
-GoodClock Android library has parameters which may work for most of the user needs, but for specific applications the parameters can be changed. More details of the parameters will be added. Some of the important parameters are as follows:
-- ntpHost: can be updated to the preferred NTP server. Currently, it uses Apple NTP server.
+## 1.2 Changing Default Parameters
+GoodClock Android library has parameters that may work for most of the user needs, but for specific applications, the settings can be changed. More details of the settings will be added. Some of the critical parameters are as follows:
+- ntpHost: can be updated to the preferred NTP server. Currently, it uses the Apple NTP server.
 - drift: is disabled by default. This can be set to 1.
-- retry: currently for each offset calcuations, 10 NTP requests are made to account for NTP variability.
+- retry: currently, for each offset calculations, 10 NTP requests are made to account for NTP variability.
 - period: NTP offset calculations are done in the background periodically every 15 minutes. This can be changed to more frequent updates based on application constraints.
 
-## 1.3 Accuracy of Android implementation
-The Android implementation which calculates the offset using NTP server was tested across a set of Android Smartphones using the UCLA Campus Wifi Network. The variability of offset calculations was within 1 millisecond for 95% of the cases.
+## 1.3 Accuracy of Android Implementation
+The Android implementation, which calculates the offset using an NTP server, was tested across a set of Android Smartphones using the UCLA Campus Wi-Fi Network. The variability of offset calculations was within 1 millisecond for 95% of the cases.
 
 
 # 2. iOS Implementation
