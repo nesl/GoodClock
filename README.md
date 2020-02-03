@@ -50,3 +50,11 @@ The iOS implementation is also available in [GoodClock.swift](https://github.com
 
 # 3. Python Implementation
 A Python implementation is available in [GoodClock.py](https://github.com/nesl/GoodClock/blob/master/GoodClock.py)
+
+# 4. More Evaluations across Smartphones
+
+## Devices
+![Devices used to evaluate GoodClock on UCLA Wi-Fi](https://github.com/nesl/GoodClock/blob/master/devices.png)
+
+## Results
+![Offset calculations using GoodClock on UCLA Wi-Fi](https://github.com/nesl/GoodClock/blob/master/evaluation.png)
