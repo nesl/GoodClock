@@ -1,5 +1,17 @@
 # GoodClock: Providing Shared Notion of Time across Smartphones
 
+**Paper for reference**
+```
+@inproceedings{sandha2020time,
+  title={Time Awareness in Deep Learning-Based Multimodal Fusion Across Smartphone Platforms},
+  author={Sandha, Sandeep Singh and Noor, Joseph and Anwar, Fatima M and Srivastava, Mani},
+  booktitle={2020 IEEE/ACM Fifth International Conference on Internet-of-Things Design and Implementation (IoTDI)},
+  pages={149--156},
+  year={2020},
+  organization={IEEE}
+}
+```
+
 An application-level library based on the NTP to provide the shared notion of time across smartphones. GoodClock allows drift correction in cases where the NTP updates are not available frequently.  The figure below shows the GoodClock library results using UCLA campus Wi-Fi on Android devices.
 ![GoodClock Library Results on UCLA Wi-Fi](https://github.com/nesl/GoodClock/blob/master/Android_Library/GoodClock_Android_Wifi.png)
 
